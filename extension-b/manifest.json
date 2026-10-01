@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "DNR repro B",
+  "version": "1.0",
+  "description": "One priority-1 redirect rule: strip ccc everywhere.",
+  "permissions": ["declarativeNetRequest", "declarativeNetRequestWithHostAccess"],
+  "host_permissions": ["*://example.com/*", "*://example.org/*"],
+  "declarative_net_request": {
+    "rule_resources": [{ "id": "rules", "enabled": true, "path": "rules.json" }]
+  },
+  "action": { "default_title": "DNR repro B" }
+}

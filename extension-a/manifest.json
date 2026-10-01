@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "DNR repro A",
+  "version": "1.0",
+  "description": "Two priority-1 redirect rules: strip aaa everywhere, strip bbb on example.com.",
+  "permissions": ["declarativeNetRequest", "declarativeNetRequestWithHostAccess"],
+  "host_permissions": ["*://example.com/*", "*://example.org/*"],
+  "declarative_net_request": {
+    "rule_resources": [{ "id": "rules", "enabled": true, "path": "rules.json" }]
+  },
+  "action": { "default_title": "DNR repro A" }
+}

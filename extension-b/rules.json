@@ -1,0 +1,8 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "condition": { "urlFilter": "*", "resourceTypes": ["main_frame"] },
+    "action": { "type": "redirect", "redirect": { "transform": { "queryTransform": { "removeParams": ["ccc"] } } } }
+  }
+]
